@@ -122,3 +122,9 @@
     display: block;
     font-size: 18px;
 }
+
+.small_profile {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+}
