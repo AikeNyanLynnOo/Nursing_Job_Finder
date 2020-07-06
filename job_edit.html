@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Edit Job Post</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo1.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/price_rangs.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/admin_panel.css">
+
+
+</head>
+
+<body>
+    <main>
+        <div class="d-flex" id="wrapper">
+
+            <!-- Sidebar -->
+            <div class="border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">
+                    <a href="index.html"><img src="assets/img/logo1resize.png" alt=""></a>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="admin.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-tachometer-alt menuicon"></li>Dashboard</a>
+                    <a href="job_new.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-paper-plane menuicon"></li>Post new Job</a>
+                    <a href="employer_new.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-building menuicon"></li>Add New Company</a>
+                    <a href="admin_profile.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-user menuicon"></li>Profile</a>
+                    <a href="/admin_signout" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-power-off menuicon"></li>Logout</a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+                <nav class="navbar">
+                    <img src="./assets/img/logo/menu.png" alt="Toggle_Menu" id="menu-toggle" class="menubar">
+                </nav>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                            <h3 class="mb-30">Edit Job Details</h3>
+                            <form action="#" class="register_form">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon "><i class="fa fa-briefcase   " aria-hidden="true "></i></div>
+                                    <input type="text" name="title" placeholder="Job Title" value="{here real value}" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Job Title'" required class="single-input">
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="input-group-icon mt-10 two_col_input_left">
+                                            <div class="icon "><i class="fa fa-yen-sign" aria-hidden="true "></i></div>
+                                            <input type="number" name="min_salary" id="min_salary" value="195000" placeholder="Minimum Salary" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Min Salary'" required class="single-input">
+
+                                        </div>
+                                        <div class="input-group-icon mt-10 two_col_input">
+                                            <div class="icon "><i class="fa fa-yen-sign" aria-hidden="true "></i></div>
+                                            <input type="number" name="max_salary" id="max_salary" value="250000" placeholder=" Max Possible Salary " onfocus="this.placeholder='' " onblur="this.placeholder='Max Possible Salary' " required class="single-input ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group-icon mt-10 select_border">
+                                    <div class="icon "><i class="fa fa-list " aria-hidden="true "></i></div>
+                                    <div class="form-select " id="default-select ">
+                                        <select name="employment_type">
+                                            <option value=" " selected disabled>Employment Type</option>
+                                            <option value="True ">Full Time</option>
+                                            <option value="False ">Part Time</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="input-group-icon mt-10 ">
+                                    <div class="icon "><i class="fa fa-child " aria-hidden="true "></i></div>
+                                    <input type="number " name="min_age " id="min_age " value="{here real value} " placeholder="Minimum Required Age " onfocus="this.placeholder='' " onblur="this.placeholder='Minimum Required Age' " required class="single-input ">
+                                </div>
+                                <div class="input-group-icon mt-10 ">
+                                    <div class="icon "><i class="fa fa-calendar-alt " aria-hidden="true "></i></div>
+                                    <textarea name="workday " id="workday " cols="30 " rows="4 " placeholder="Working Days " class="single-input ">{here real value}</textarea>
+                                </div>
+                                <div class="input-group-icon mt-10 ">
+                                    <div class="icon "><i class="fa fa-clock " aria-hidden="true "></i></div>
+                                    <textarea name="workhour " id="workhour " cols="30 " rows="4 " placeholder="Working Hours " class="single-input ">{here real value}</textarea>
+                                </div>
+                                <div class="input-group-icon mt-10 select_border">
+                                    <div class="icon "><i class="fa fa-language " aria-hidden="true "></i></div>
+                                    <div class="form-select " id="default-select ">
+                                        <select name="lang_skill ">
+                                                    <option value=" " selected disabled>Japanese Languae Skill</option>
+                                                    <option value="3 ">N3</option>
+                                                    <option value="2 ">N2</option>
+                                                    <option value="1 ">N1</option>
+                                                    </select>
+                                    </div>
+                                </div>
+                                <div class="input-group-icon mt-10 select_border">
+                                    <div class="icon "><i class="fa fa-calendar-check " aria-hidden="true "></i></div>
+                                    <div class="form-select " id="default-select ">
+                                        <select name="min_experience ">
+                                                    <option value=" " selected disabled>Min Experience Years</option>
+                                                    <option value=" ">Less Than 1 Year</option>
+                                                    <option value=" ">1-2 Years</option>
+                                                    <option value=" ">2-3 Years</option>
+                                                    <option value=" ">3-6 Years</option>
+                                                    <option value=" ">6 Years and more</option>
+                                                    </select>
+                                    </div>
+                                </div>
+                                <div class="input-group-icon mt-10 select_border">
+                                    <div class="icon "><i class="fas fa-map-marker-alt " aria-hidden="true "></i></div>
+                                    <div class="form-select " id="default-select ">
+                                        <select name="area ">
+                                                    <option value=" " selected disabled>Area</option>
+                                                    <option value=" ">Hokkaido</option>
+                                                    <option value=" ">Honshu</option>
+                                                    <option value=" ">Shikoku </option>
+                                                    <option value=" ">Okinawa</option>
+                                                    </select>
+                                    </div>
+                                </div>
+                                <div class="input-group-icon mt-10 select_border">
+                                    <div class="icon "><i class="fa fa-map-marker-alt " aria-hidden="true "></i></div>
+                                    <div class="form-select " id="default-select ">
+                                        <select name="city ">
+                                                    <option value=" " selected disabled>City</option>
+                                                    <option value=" ">Tokyo</option>
+                                                    <option value=" ">Sapporo</option>
+                                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="input-group-icon mt-10 select_border">
+                                    <div class="icon "><i class="fa fa-building " aria-hidden="true "></i></div>
+                                    <div class="form-select " id="default-select ">
+                                        <select name="company ">
+                                                    <option value=" " selected disabled>Company</option>
+                                                    <option value=" ">Company A</option>
+                                                    <option value=" ">Company B</option>
+                                                    <option value=" ">Company C</option>
+                                                    </select>
+                                    </div>
+                                </div>
+                                <div class="input-group-icon mt-10 ">
+                                    <div class="icon "><i class="fa fa-tasks " aria-hidden="true "></i></div>
+                                    <textarea name="description " id="description " cols="30 " rows="4 " placeholder="Job Description " class="single-input ">{here real value}</textarea>
+                                </div>
+                                <div class="input-group-icon mt-10 ">
+                                    <div class="icon "><i class="fa fa-tasks " aria-hidden="true "></i></div>
+                                    <textarea name="requirement " id="requirement " cols="30 " rows="4 " placeholder="Job Requirements " class="single-input ">{here real value}</textarea>
+                                </div>
+                                <div class="input-group-icon mt-10 ">
+                                    <div class="icon "><i class="fa fa-tasks " aria-hidden="true "></i></div>
+                                    <textarea name="other_qualifications " id="other_qualifiations " cols="30 " rows="4 " placeholder="Other Qualifications (Optional) " class="single-input ">{here real value}</textarea>
+                                </div>
+                                <hr>
+                                <button class="btn btn_long ">Edit Job Details</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+
+    <!-- JS here -->
+
+
+
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/modernizr-3.5.0.min.js "></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/jquery-1.12.4.min.js "></script>
+    <script src="./assets/js/popper.min.js "></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+
+    <!-- Admin Panel Js -->
+    <script src="./assets/js/admin_panel.js"></script>
+
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js "></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js "></script>
+    <script src="./assets/js/slick.min.js "></script>
+    <script src="./assets/js/price_rangs.js "></script>
+
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js "></script>
+    <script src="./assets/js/animated.headline.js "></script>
+    <script src="./assets/js/jquery.magnific-popup.js "></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js "></script>
+    <script src="./assets/js/jquery.nice-select.min.js "></script>
+    <script src="./assets/js/jquery.sticky.js "></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js "></script>
+    <script src="./assets/js/jquery.form.js "></script>
+    <script src="./assets/js/jquery.validate.min.js "></script>
+    <script src="./assets/js/mail-script.js "></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js "></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js "></script>
+    <script src="./assets/js/main.js "></script>
+
+</body>
+
+</html>
