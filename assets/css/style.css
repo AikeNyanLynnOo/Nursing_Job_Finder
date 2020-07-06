@@ -7387,3 +7387,124 @@ form.search-box .search-form a {
     background: #242b5e;
     color: #fff
 }
+
+
+/*for job new post form */
+
+
+/*for job edit form */
+
+.two_col_input {
+    width: 50%;
+}
+
+.two_col_input_left {
+    padding-right: 1em;
+    width: 50%;
+}
+
+
+/*for register form */
+
+.register_form div {
+    padding-bottom: 1em;
+}
+
+.register_form div div div {
+    padding-bottom: 0em;
+}
+
+.register_form div input {
+    min-height: 50px;
+    border: 0.1px solid #ddd;
+}
+
+.register_form div input[type="file"] {
+    min-height: 50px;
+    border: none;
+}
+
+.register_form div textarea {
+    min-height: 50px;
+    border: 1px solid#ddd;
+}
+
+.select_border {
+    min-height: 50px;
+    border: 1px solid#ddd;
+}
+
+.register_form div div div input {
+    min-height: 50px;
+    border: 1px solid#ddd;
+}
+
+.btn_long {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.edit_btn {
+    background: #52c8fa;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 1em 1.5em;
+    border-radius: 0px;
+    overflow: hidden;
+    position: inherit;
+    right: 0;
+}
+
+.delete_btn {
+    background: #da2461;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 1em 1.5em;
+    border-radius: 0px;
+    overflow: hidden;
+    position: inherit;
+    right: 0;
+}
+
+.btn_center {
+    text-align: center;
+}
+
+
+/*Profile*/
+
+.profile_img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: khaki;
+}
+
+#profile-pic {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
