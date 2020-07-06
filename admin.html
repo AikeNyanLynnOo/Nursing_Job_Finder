@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Admin Sign In</title>
+    <title>Admin Panel</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo1.png">
@@ -22,10 +22,12 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/admin_panel.css">
 
 </head>
 
 <body>
+    <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
@@ -36,46 +38,84 @@
             </div>
         </div>
     </div>
-    <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-        <div class="header-area header-transparrent">
-            <div class="headder-top header-sticky">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo1resize.png" alt=""></a>
+
+
+    <main>
+        <div class="d-flex" id="wrapper">
+
+            <!-- Sidebar -->
+            <div class="border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">
+                    <a href="index.html"><img src="assets/img/logo1resize.png" alt=""></a>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="admin.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-tachometer-alt menuicon"></li>Dashboard</a>
+                    <a href="job_new.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-paper-plane menuicon"></li>Post new Job</a>
+                    <a href="employer_new.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-building menuicon"></li>Add New Company</a>
+                    <a href="admin_profile.html" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-user menuicon"></li>Profile</a>
+                    <a href="/admin_signout" class="list-group-item list-group-item-action btn">
+                        <li class="fa fa-power-off menuicon"></li>Logout</a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+                <nav class="navbar">
+                    <img src="./assets/img/logo/menu.png" alt="Toggle_Menu" id="menu-toggle" class="menubar">
+                </nav>
+
+                <div class="container-fluid">
+                    <h1 class="mt-4">Here goes the content</h1>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card-counter primary">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="count-numbers">312</span>
+                                    <span class="count-name">Posted Jobs</span>
+                                </div>
+                                <a href="job_all.html" class="view_btn btn">View</a>
                             </div>
-                        </div>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+
+                            <div class="col-md-3">
+                                <div class="card-counter danger">
+                                    <i class="fa fa-users"></i>
+                                    <span class="count-numbers">6875</span>
+                                    <span class="count-name">Registered Users</span>
+                                </div>
+                                <a href="user_all.html" class="view_btn btn">View</a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card-counter success">
+                                    <i class="fa fa-building"></i>
+                                    <span class="count-numbers">400</span>
+                                    <span class="count-name">Companies</span>
+                                </div>
+                                <a href="employer_all.html" class="view_btn btn">View</a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card-counter info">
+                                    <i class="fa fa-clock"></i>
+                                    <span class="count-numbers">150</span>
+                                    <span class="count-name">Pending Applications</span>
+                                </div>
+                                <a href="applications_pendings.html" class="view_btn btn">View</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Header End -->
-    </header>
-    <main>
-        <div class="section-top-border">
-            <div class="row">
-                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-                    <h3 class="mb-30">Welcome Admin !!! </h3>
-                    <form action="#" style="margin-bottom:3em">
-                        <div class="input-group-icon mt-10">
-                            <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                            <input type="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required class="single-input">
-                        </div>
-                        <div class="input-group-icon mt-10" style="margin-top: 2em;">
-                            <div class="icon"><i class="fa fa-key" aria-hidden="true"></i></div>
-                            <input type="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
-                        </div>
-                        <button class="btn" style="width: 100%;margin-top: 5em;">Sign In</button>
-                    </form>
-                </div>
-            </div>
+            <!-- /#page-content-wrapper -->
+
         </div>
     </main>
 
@@ -84,12 +124,18 @@
 
     <!-- JS here -->
 
+
+
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/modernizr-3.5.0.min.js "></script>
     <!-- Jquery, Popper, Bootstrap -->
     <script src="./assets/js/jquery-1.12.4.min.js "></script>
     <script src="./assets/js/popper.min.js "></script>
     <script src="./assets/js/bootstrap.min.js "></script>
+
+    <!-- Admin Panel Js -->
+    <script src="./assets/js/admin_panel.js"></script>
+
     <!-- Jquery Mobile Menu -->
     <script src="./assets/js/jquery.slicknav.min.js "></script>
 
